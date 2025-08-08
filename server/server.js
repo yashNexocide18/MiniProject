@@ -8,7 +8,7 @@ import blogrouter from "./routes/blogroutes.js";
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: "http://localhost:3000",
+    origin: "https://mini-project-sand-one.vercel.app",
     credentials: true,
 }));
 
