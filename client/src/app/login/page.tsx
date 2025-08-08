@@ -48,6 +48,8 @@ export default function Login() {
     } else {
         alert("Login failed. Please try again.");
     }
+    setEmail("");
+    setPassword("");
 
     console.error(err);
 }
