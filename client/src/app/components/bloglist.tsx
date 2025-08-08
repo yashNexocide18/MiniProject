@@ -38,7 +38,7 @@ export default function Bloglist() {
             setLoading(true)
             try {
                 const res = await axios.get(
-                    `http://localhost:5000/api/blogs/getblogs`
+                    `https://miniproject-6aoz.onrender.com/api/blogs/getblogs`
                 );
                 setUserBlogs(res.data);
             } catch (err) {

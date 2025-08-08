@@ -42,7 +42,7 @@ export default function Register() {
         }
     
         try {
-            const res = await axios.post("http://localhost:5000/api/authentication/register", {
+            const res = await axios.post("https://miniproject-6aoz.onrender.com/api/authentication/register", {
                 username,
                 email,
                 password,

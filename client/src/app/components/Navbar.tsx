@@ -44,7 +44,7 @@ export default function Navbar() {
 
     const handleLogout = async () => {
         try {
-            await axios.post("http://localhost:5000/api/authentication/logout");
+            await axios.post("https://miniproject-6aoz.onrender.com/api/authentication/logout");
             localStorage.removeItem("token");
             localStorage.removeItem("userid");
             router.push("/login");

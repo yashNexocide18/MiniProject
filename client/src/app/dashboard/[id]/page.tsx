@@ -22,7 +22,7 @@ export default function BlogDetail({ params }: { params: Promise<{ id: string }>
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/blogs/getblog/${id}`);
+        const res = await axios.get(`https://miniproject-6aoz.onrender.com/api/blogs/getblog/${id}`);
         setBlog(res.data);
       } catch (err) {
         console.error("Failed to fetch blog:", err);

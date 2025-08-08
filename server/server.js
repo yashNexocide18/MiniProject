@@ -6,11 +6,11 @@ import authrouter from "./routes/authroutes.js";
 import blogrouter from "./routes/blogroutes.js";
 
 const app = express();
-app.use(express.json());
 app.use(cors({
     origin: "https://mini-project-sand-one.vercel.app",
     credentials: true,
 }));
+app.use(express.json());
 
 dotenv.config();
 const PORT = process.env.PORT || 8000;

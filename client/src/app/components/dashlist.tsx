@@ -70,7 +70,7 @@ export default function DashList() {
             try {
                 const usersid = localStorage.getItem("userid");
                 const res = await axios.get(
-                    `http://localhost:5000/api/blogs/getuserblogs/${usersid}`
+                    `https://miniproject-6aoz.onrender.com/api/blogs/getuserblogs/${usersid}`
                 );
                 setUserBlogs(res.data);
             } catch (err) {
@@ -90,7 +90,7 @@ export default function DashList() {
                 return;
             }
 
-            await axios.delete(`http://localhost:5000/api/blogs/delete/${blogId}`, {
+            await axios.delete(`https://miniproject-6aoz.onrender.com/api/blogs/delete/${blogId}`, {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
@@ -113,7 +113,7 @@ export default function DashList() {
             }
 
             const res = await axios.post(
-                "http://localhost:5000/api/blogs/create",
+                "https://miniproject-6aoz.onrender.com/api/blogs/create",
                 {
                     title,
                     content,
@@ -145,7 +145,7 @@ export default function DashList() {
             }
 
             await axios.put(
-                `http://localhost:5000/api/blogs/update/${blogId}`,
+                `https://miniproject-6aoz.onrender.com/api/blogs/update/${blogId}`,
                 {
                     title: editTitle,
                     content: editContent,

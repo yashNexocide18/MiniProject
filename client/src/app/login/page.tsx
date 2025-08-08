@@ -28,7 +28,7 @@ export default function Login() {
         }
 
         try {
-            const res = await axios.post("http://localhost:5000/api/authentication/login", {
+            const res = await axios.post("https://miniproject-6aoz.onrender.com/api/authentication/login", {
                 email,
                 password,
             });
