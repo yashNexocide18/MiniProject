@@ -33,7 +33,7 @@ export default function Navbar() {
             try {
                 const usersid = localStorage.getItem("userid");
                 if (!usersid) return;
-                const res = await axios.get(`http://localhost:5000/api/authentication/getuser/${usersid}`);
+                const res = await axios.get(`https://miniproject-6aoz.onrender.com/api/authentication/getuser/${usersid}`);
                 setUser(res.data);
             } catch (err) {
                 console.error("Failed to fetch user:", err);
