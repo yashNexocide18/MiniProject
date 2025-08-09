@@ -115,7 +115,7 @@ export default function Navbar() {
                 <div className="hidden md:flex items-center justify-center gap-4">
                     {user && (
                         <div className="flex items-center gap-2">
-                            <div className="h-8 w-8 border rounded-full"><Image src="/account.svg" alt="logout" height={23} width={23} /></div>
+                            <Image src="/account.svg" alt="logout" height={25} width={25} />
                             <h1>{user.username}</h1>
                             <Tooltip>
                                 <TooltipTrigger onClick={handleLogout}>
